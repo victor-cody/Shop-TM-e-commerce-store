@@ -12,7 +12,9 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.2"
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.6.2",
+    "postcss": "^8.4.26"
   },
   "dependencies": {
     "@storyblok/nuxt": "^5.5.2"
