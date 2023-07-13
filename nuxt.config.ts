@@ -17,17 +17,17 @@ export default defineNuxtConfig({
     ],
     "@nuxtjs/tailwindcss",
   ],
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
-  },
-  devtools: { enabled: true },
+  // build: {
+  //   postcss: {
+  //     postcssOptions: {
+  //       plugins: {
+  //         tailwindcss: {},
+  //         autoprefixer: {},
+  //       },
+  //     },
+  //   },
+  // },
+  // devtools: { enabled: true },
   vite: {
     optimizeDeps: { exclude: ["fsevents"] },
   },
