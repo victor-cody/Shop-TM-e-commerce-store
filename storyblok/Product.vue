@@ -1,9 +1,9 @@
 <template>
 	<section
-		class="container mx-auto px-5 lg:py-5 overflow-hidden"
+		class="container mx-auto px-5 lg:py-5 overflow-hidden lg:w-[98%] flex flex-wrap"
 		v-editable="blok"
 	>
-		<div class="lg:w-[98%] mx-auto flex flex-wrap">
+		<!-- <div class=""> -->
 			<div class="lg:w-1/2 w-full">
 				<img
 					v-if="blok?.product_images.length > 0"
@@ -36,6 +36,7 @@
 				</div>
 				<button
 					class="px-12 py-5 w-4/5 max-w-[30rem] border-solid border-[1px] border-black text-xl font-normal snipcart-add-item flex justify-center items-center text-white bg-black focus:outline-none rounded snipcart-add-item disabled:bg-gray-700"
+					:disabled="!blok.in_stock"
 				>
 					Add to cart
 					<svg
@@ -52,7 +53,7 @@
 					</svg>
 				</button>
 			</div>
-		</div>
+		<!-- </div> -->
 	</section>
 </template>
 <script setup>

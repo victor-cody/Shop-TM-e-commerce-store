@@ -13,3 +13,6 @@
 		</h1>
 	</header>
 </template>
+
+<script setup>
+</script>
