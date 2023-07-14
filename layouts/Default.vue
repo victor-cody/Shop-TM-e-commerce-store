@@ -11,10 +11,12 @@
 	<div
 		hidden
 		id="snipcart"
-		:data-api-key="process.env.NUXT_PUBLIC_SNIPCART_API_KEY"
+		:data-api-key="SNIPCART_API_KEY"
+		data-config-modal-style="side"
 	></div>
 </template>
 
 <script setup>
  import process from "process";
+ const SNIPCART_API_KEY = process.env.NUXT_PUBLIC_SNIPCART_API_KEY;
 </script>
