@@ -9,7 +9,7 @@
 				v-if="product?.product_images.length > 0"
 				:src="product?.product_images[0].filename"
 				:alt="product.product_images[0].alt"
-				class="w-full max-h-[34.5rem] mb-5 object-cover object-top shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300 ease-in-out"
+				class="w-full min-h-[34rem] mb-5 object-cover object-top shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300 ease-in-out"
 			/>
 			<span
 				class="absolute z-10 top-[1.2%] right-[5.6%] px-4 py-4 max-w-[30%] text-sm font-thin text-white bg-black flex justify-center items-center"

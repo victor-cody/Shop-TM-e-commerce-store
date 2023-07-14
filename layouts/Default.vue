@@ -8,7 +8,13 @@
 			<Footer />
 		</div>
 	</div>
+	<div
+		hidden
+		id="snipcart"
+		:data-api-key="process.env.NUXT_PUBLIC_SNIPCART_API_KEY"
+	></div>
 </template>
 
 <script setup>
+ import process from "process";
 </script>

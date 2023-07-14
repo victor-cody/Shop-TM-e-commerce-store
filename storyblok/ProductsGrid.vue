@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto font-light" v-editable="blok">
 		<h2
-			class="font-normal tracking-tighter leading-tight !text-4xl lg:text-6xl mb-7 lg:mb-12"
+			class="font-normal tracking-tighter leading-tight !text-4xl lg:text-6xl mb-7 lg:mb-10"
 		>
 			{{ blok.headline }}
 		</h2>

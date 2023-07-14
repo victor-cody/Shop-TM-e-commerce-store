@@ -9,7 +9,7 @@
 					v-if="blok?.product_images.length > 0"
 					:src="blok?.product_images[0].filename"
 					:alt="blok.product_images[0].alt"
-					class="w-[88%] lg:w-[80%] lg:max-h-[78vh] mx-auto object-cover object-center rounded-md hover:scale-105 transition-all duration-300 ease-in-out"
+					class="w-[88%] lg:w-[80%] lg:max-h-[80vh] mx-auto object-cover object-center rounded-md hover:scale-105 transition-all duration-300 ease-in-out"
 				/>
 			</div>
 			<div
@@ -37,6 +37,11 @@
 				<button
 					class="px-12 py-5 w-4/5 max-w-[30rem] border-solid border-[1px] border-black text-xl font-normal snipcart-add-item flex justify-center items-center text-white bg-black focus:outline-none rounded snipcart-add-item disabled:bg-gray-700"
 					:disabled="!blok.in_stock"
+					:data-item-id="blok._uid"
+					:data-item-price="blok.price"
+					:data-item-url="route.fullPath"
+					:data-item-image="blok.product_images[0].filename"
+					:data-item-name="blok.name"
 				>
 					Add to cart
 					<svg
