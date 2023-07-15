@@ -1,3 +1,5 @@
+// import { RuntimeConfig } from "nuxt/schema";
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -17,6 +19,13 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/css/tailwind.css"],
+  runtimeConfig: {
+    storyblokAccessToken: process.env.NUXT_STORYBLOK_API_ACCESS_TOKEN,
+    public: {
+      storyblokAppMode: process.env.NUXT_PUBLIC_STORYBLOK_APP_MODE,
+      snipcartApiKey: process.env.NUXT_PUBLIC_SNIPCART_API_KEY,
+    },
+  },
   modules: [
     [
       "@storyblok/nuxt",

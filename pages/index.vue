@@ -1,5 +1,6 @@
 <script setup>
-	import process from "process";
+	// import process from "process";
+	const runtimeConfig = useRuntimeConfig()
 
 	const { slug } = useRoute().params;
 
@@ -8,7 +9,7 @@
 	const resolveRelations = ["products-grid.products", "featured_product.product"];
 
 	const sbParams = {
-		version: process.env.NUXT_PUBLIC_STORYBLOK_APP_MODE,
+		version: runtimeConfig.public.storyblokAppMode,
 		resolve_relations: resolveRelations,
 	};
 
