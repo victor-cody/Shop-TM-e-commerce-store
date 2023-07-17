@@ -3,17 +3,20 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 nuxt dev --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.16.19",
-    "nuxt": "^3.6.2"
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.6.2",
+    "postcss": "^8.4.26"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.8.0"
+    "@storyblok/nuxt": "^5.5.2"
   }
 }
