@@ -28,7 +28,7 @@
 		<div
 			v-for="block in blok.teaser_image"
 			:key="block.id"
-			class="w-full lg:w-1/3"
+			:class="`w-full lg:w-1/${blok.teaser_image.length}`"
 		>
 			<div
 				class="h-full bg-no-repeat bg-cover bg-bottom"
